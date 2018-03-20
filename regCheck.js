@@ -1,5 +1,4 @@
-function isFromCapeTown(CapeTown){
- return CapeTown.startsWith('CA')
-};
-// console.log(isFromCapeTown('CFS 112-552'));
-// console.log(isFromCapeTown('CA 115-255'));
+function regCheck(registration,location){
+   return registration.endsWith(location);
+}
+console.log(regCheck('DV 23 NB GP', 'GP'));

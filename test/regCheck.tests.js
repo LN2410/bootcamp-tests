@@ -1,10 +1,9 @@
 describe('The regCheck function', function(){
-  var reg = 'CA 115-255';
-  var reg2 = 'CF 115-226';
-  it('should return true if the registration number startsWith CA',function(){
-    assert.equal(isFromCapeTown(reg),true)
+  //var reg = 'CA 115-255','DV 23 NB GP';
+  it('should return true if a registration number is for GP, L, EC, MP registration plates',function(){
+    assert.equal(regCheck('DV 23 NB GP', 'GP'),true)
 });
-  it('should return false if the registration number does !startsWith CA',function(){
-    assert.equal(isFromCapeTown(reg2),false)
+  it('should return false if a registration number is not for GP, L, EC, MP registration plates', function(){
+    assert.equal(regCheck('CY189-012', 'GP'), false)
   });
 });

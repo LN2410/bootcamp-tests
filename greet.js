@@ -1,5 +1,5 @@
-var greet = function(Janine){
-  console.log('Hello, ' + Janine)
-  return 'Hello, ' + Janine;
+var greet = function(name){
+  console.log('Hello, ' + name)
+  return 'Hello, ' + name;
 }
 greet('Janine');
